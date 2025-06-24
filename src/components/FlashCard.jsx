@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Flashcard.css";
 
 const flashcardsData = require("./Quizlet_Ch10_15_full.json");
-
 const multipleChoiceData = require("./Quizlet_Ch10_15_full.json");
 
 function Flashcard({ card, flipped, onFlip }) {
@@ -76,6 +75,7 @@ export default function FlashcardApp() {
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const [isQuiz, setIsQuiz] = useState(false);
+  const [showAll, setShowAll] = useState(false); // New state for showing all questions and answers
 
   const handleNext = () => {
     setSelected(null);
@@ -91,6 +91,7 @@ export default function FlashcardApp() {
   };
 
   const toggleQuiz = () => setIsQuiz(!isQuiz);
+  const toggleShowAll = () => setShowAll(!showAll); // Toggle function for showing all questions and answers
 
   return (
     <div className="flashcard-app">
@@ -135,6 +136,25 @@ export default function FlashcardApp() {
       <p className="counter">
         Card {index + 1} of {multipleChoiceData.length}
       </p>
+
+      {/* Button to show all questions and answers */}
+      <button className="button-show-all" onClick={toggleShowAll}>
+        {showAll
+          ? "Hide All Questions and Answers"
+          : "Show All Questions and Answers"}
+      </button>
+
+      {/* Display all questions and answers if showAll is true */}
+      {showAll && (
+        <div className="all-questions-answers">
+          {flashcardsData.map((card, idx) => (
+            <div key={idx} className="question-answer-pair">
+              <div className="question">{card.question}</div>
+              <div className="answer">Answer: {card.answer}</div>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

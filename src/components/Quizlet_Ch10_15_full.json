@@ -433,7 +433,7 @@
       "The class is called by the interface.",
       "The class is independent of the interface."
     ],
-    "answer": "The class implements the interface."
+    "answer": "The class is called by the interface."
   },
   {
     "question": "Which of the following is an entity class?",
@@ -598,7 +598,7 @@
       "The primary key of the aggregate table is a foreign key of the part table.",
       "The primary key of the part table is a foreign key of the aggregate table."
     ],
-    "answer": "The aggregate and part tables have the same primary key."
+    "answer": "The primary key of the part table is a foreign key of the aggregate table."
   },
   {
     "question": "When mapping a generalization/specialization relationship to a relational database, which of the following is NOT possible?",

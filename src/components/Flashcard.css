@@ -199,3 +199,32 @@
   text-align: center;
   line-height: 1.6;
 }
+.all-questions-answers {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f7fafc; /* Light background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.question-answer-pair {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #cbd5e0; /* Light border */
+    border-radius: 8px;
+    background-color: white; /* White background for each pair */
+    transition: background-color 0.3s ease;
+}
+.question-answer-pair:hover {
+    background-color: #e2e8f0; /* Change background on hover */
+}
+.question {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2b6cb0; /* Dark blue for questions */
+    margin-bottom: 0.5rem;
+}
+.answer {
+    font-size: 1rem;
+    color: #2f855a; /* Dark green for answers */
+    font-weight: 500;
+}
