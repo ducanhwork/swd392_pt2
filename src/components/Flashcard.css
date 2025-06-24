@@ -1,0 +1,159 @@
+/* Reset và base styles */
+.flashcard-app {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+   padding-bottom: 3rem; 
+}
+
+.app-title {
+  color: #1a365d;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 800;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Container flashcard */
+.flashcard-container {
+  width: 100%;
+  height: 400px;
+  perspective: 1000px;
+  margin-bottom: 2rem;
+}
+
+/* Flashcard */
+.flashcard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.flashcard.flipped {
+  transform: rotateY(180deg);
+}
+
+/* Mặt trước và sau của flashcard */
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Mặt trước */
+.card-front {
+  background: linear-gradient(135deg, #ffffff 0%, #ebf8ff 100%);
+  border: 2px solid #4299e1;
+  justify-content: space-between;
+}
+
+.card-question {
+  color: #2b6cb0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.option {
+  background: white;
+  color: #4a5568;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  padding: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.option:hover {
+  background: #bee3f8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.hint-text {
+  color: #718096;
+  font-style: italic;
+  font-size: 0.875rem;
+  align-self: flex-end;
+}
+
+/* Mặt sau */
+.card-back {
+  background: linear-gradient(135deg, #f0fff4 0%, #ffffff 100%);
+  border: 2px solid #48bb78;
+  transform: rotateY(180deg);
+  justify-content: center;
+  align-items: center;
+}
+
+.answer-label {
+  color: #2f855a;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.answer-text {
+  color: #2b6cb0;
+  font-size: 1.25rem;
+}
+
+/* Navigation buttons */
+.nav-buttons {
+
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.nav-button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.prev-button {
+  background: #e2e8f0;
+  color: #4a5568;
+}
+
+.prev-button:hover {
+  background: #cbd5e0;
+}
+
+.next-button {
+  background: #4299e1;
+  color: white;
+}
+
+.next-button:hover {
+  background: #3182ce;
+}
+
+.counter {
+  color: #718096;
+  font-style: italic;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+}
