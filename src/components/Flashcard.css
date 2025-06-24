@@ -190,3 +190,12 @@
   background: #fed7e2; /* Light red */
   color: #742a2a; /* Dark red */
 }
+/* Nổi bật câu hỏi */
+.large-question {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c5282; /* Đậm hơn màu xanh dương */
+  margin-bottom: 1.5rem;
+  text-align: center;
+  line-height: 1.6;
+}

@@ -33,16 +33,20 @@ function Flashcard({ card, flipped, onFlip }) {
   );
 }
 
-function MultipleChoiceQuiz({ question, options, answer }) {
-  const [selected, setSelected] = useState(null);
-
+function MultipleChoiceQuiz({
+  question,
+  options,
+  answer,
+  selected,
+  setSelected,
+}) {
   const handleSelect = (option) => {
     setSelected(option);
   };
 
   return (
     <div className="multiple-choice-quiz">
-      <div className="quiz-question">{question}</div>
+      <div className="quiz-question large-question">{question}</div>
       <div className="options-grid">
         {options.map((opt, idx) => (
           <div
@@ -68,11 +72,13 @@ function MultipleChoiceQuiz({ question, options, answer }) {
 }
 
 export default function FlashcardApp() {
+  const [selected, setSelected] = useState(null);
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const [isQuiz, setIsQuiz] = useState(false);
 
   const handleNext = () => {
+    setSelected(null);
     setFlipped(false);
     setIndex((prev) => (prev + 1) % flashcardsData.length);
   };
@@ -96,7 +102,11 @@ export default function FlashcardApp() {
         {isQuiz ? "Go to Flashcards" : "Take the Multiple Choice Quiz"}
       </button>
       {isQuiz ? (
-        <MultipleChoiceQuiz {...multipleChoiceData[index]} />
+        <MultipleChoiceQuiz
+          {...multipleChoiceData[index]}
+          selected={selected}
+          setSelected={setSelected}
+        />
       ) : (
         <Flashcard
           card={flashcardsData[index]}
