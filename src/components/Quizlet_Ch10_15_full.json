@@ -609,5 +609,111 @@
       "Only the superclass is designed as a relational table."
     ],
     "answer": "The aggregate and part classes are designed as relational tables."
+  },
+
+  {
+    "question": "What is a condition used for in a state machine?",
+    "options": [
+      "A conditional action",
+      "A conditional state",
+      "A conditional state transition",
+      "A conditional event"
+    ],
+    "answer": "A conditional state transition"
+  },
+  {
+    "question": "In the system, the client component sends a message to the service component and then waits for a reply from the service. When the message arrives, the service accepts it, processes it, generates a reply, and then sends the reply. The client and service then both continue. The service is suspended if no message is available.The system is designed as ____",
+    "options": [
+      "The Layers of Abstraction pattern",
+      "The Call/Return pattern",
+      "The synchronous message communication pattern",
+      "The asynchronous message communication pattern"
+    ],
+    "answer": "The synchronous message communication pattern"
+  },
+  {
+    "question": "Which of the following is NOT a necessary attribute in pattern template?",
+    "options": [
+      "Pattern name",
+      "Aliases",
+      "Context",
+      "Summary of solution",
+      "Pseudo code"
+    ],
+    "answer": "Pseudo code"
+  },
+  {
+    "question": "_______ specifies the externally visible operations of a class, or component without revealing internal structure of the operations",
+    "options": ["An interface", "A class", "An object", "A service"],
+    "answer": "An interface"
+  },
+
+  {
+    "question": "A message of an interaction diagram consists of an (a) _____ and the data that accompany the event",
+    "options": ["event", "method", "operation", "guard"],
+    "answer": "event"
+  },
+
+  {
+    "question": "What is a state in a state machine?",
+    "options": [
+      "A recognizable situation that exists over an interval of time",
+      "A condition that is True or False",
+      "An input from the external environment",
+      "An output from the system"
+    ],
+    "answer": "A recognizable situation that exists over an interval of time"
+  },
+  {
+    "question": "Which of the following objects should be assigned to the same subsystem?",
+    "options": [
+      "Objects that are part of the same composite object",
+      "Client and server objects",
+      "User interface and entity objects",
+      "Objects that are associated with each other"
+    ],
+    "answer": "Objects that are part of the same composite object"
+  },
+  {
+    "question": "If scope of control is used in subsystem structuring, then:",
+    "options": [
+      "A user interface object is placed in the same subsystem as an entity object it updates.",
+      "A state-dependent control object is placed in the same subsystem as theo bjects it controls.",
+      "A state-dependent control object is placed in a different subsystem from the objects it controls.",
+      "A user interface object is placed in a different subsystem from an entity object it updates."
+    ],
+    "answer": "A state-dependent control object is placed in the same subsystem as theo bjects it controls."
+  },
+
+  {
+    "question": "The form of communication between objects in a sequential design is operation (also know as method) invocation, which is also referred to _____",
+    "options": [
+      "The Layers of Abstraction pattern",
+      "The Call/Return pattern",
+      "The synchronous message communication pattern",
+      "The asynchronous message communication pattern"
+    ],
+    "answer": "The Call/Return pattern"
+  },
+  {
+    "question": "What does a state-dependent interaction involve?",
+    "options": [
+      "A control object",
+      "A state-dependent entity object",
+      "A state-dependent control object",
+      "A state-dependent user interaction object"
+    ],
+    "answer": "A state-dependent control object"
+  },
+
+  {
+    "question": "Which of the following subsystems is NOT likely to be a client subsystem?",
+    "options": [
+      "Control subsystem",
+      "User interaction subsystem",
+      "Service subsystem",
+      "I/O subsystem"
+    ],
+    "answer": "Service subsystem"
   }
 ]
