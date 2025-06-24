@@ -157,3 +157,36 @@
   margin-top: 1rem;
   font-size: 0.875rem;
 }
+/* Button Styles for Flashcard and Quiz Navigation */
+.button-toggle {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #f7fafc; /* Light background */
+  color: #4a5568; /* Dark text */
+  text-align: center;
+  margin-top: 1rem; /* Space above button */
+}
+.button-toggle:hover {
+  background: #e2e8f0; /* Darker on hover */
+}
+.button-active {
+  background: #4299e1; /* Active button color */
+  color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Slight shadow */
+}
+.button-active:hover {
+  background: #3182ce; /* Hover color for active */
+}
+.correct {
+  background: #c6f6d5; /* Light green */
+  color: #1c4532; /* Dark green */
+}
+
+.incorrect {
+  background: #fed7e2; /* Light red */
+  color: #742a2a; /* Dark red */
+}
