@@ -47,7 +47,7 @@
       "The main sequence and a representative alternative sequence of the use case",
       "The alternative sequences of the use case"
     ],
-    "answer": "The main sequence and a representative alternative sequence of the use case"
+    "answer": "The main sequence and every alternative sequence of the use case"
   },
   {
     "question": "Which of the following could happen on an interaction diagram?",
@@ -67,7 +67,7 @@
       "Develop a hierarchical state machine.",
       "Develop a coordinator object."
     ],
-    "answer": "Develop a hierarchical state machine."
+    "answer": "Develop one state-dependent control object containing states from each use case."
   },
   {
     "question": "How would two state-dependent control objects communicate with each other?",
@@ -97,7 +97,7 @@
       "Both the client and the service have state-dependent control objects.",
       "Neither the client nor the service has a state-dependent control object."
     ],
-    "answer": "Both the client and the service have state-dependent control objects."
+    "answer": "The client has a state-dependent control object but the service does not."
   },
   {
     "question": "What does the software architecture describe?",
@@ -157,7 +157,7 @@
       "A small group of collaborating objects",
       "A recurring architecture used in a variety of systems"
     ],
-    "answer": "A recurring architecture used in a variety of systems"
+    "answer": "The structure of the major subsystems of a system"
   },
   {
     "question": "What happens in a Layers of Abstraction pattern?",
@@ -214,10 +214,10 @@
     "options": [
       "Objects that are part of the same composite object",
       "Client and server objects",
-      "User  interface and entity objects",
+      "User interface and entity objects",
       "Objects that are associated with each other"
     ],
-    "answer": "Objects that are associated with each other"
+    "answer": "Objects that are part of the same composite object"
   },
   {
     "question": "Objects that are in geographically different locations should be:",
@@ -257,23 +257,23 @@
       "Client subsystem",
       "I/O subsystem"
     ],
-    "answer": "Control subsystem"
+    "answer": "Client subsystem"
   },
   {
     "question": "Which of the following objects are NOT likely to be in the same subsystem?",
     "options": [
-      "User  interface object and entity object",
+      "User interface object and entity object",
       "State-dependent control object and coordinator object",
       "Business logic object and entity object",
       "I/O object and state-dependent control object"
     ],
-    "answer": "User  interface object and entity object"
+    "answer": "State-dependent control object and coordinator object"
   },
   {
     "question": "Which of the following subsystems is NOT likely to be a client subsystem?",
     "options": [
       "Control subsystem",
-      "User  interaction subsystem",
+      "User interaction subsystem",
       "Service subsystem",
       "I/O subsystem"
     ],
@@ -287,7 +287,7 @@
       "If the subsystem receives messages from multiple client subsystems",
       "If the subsystem needs to coordinate the execution of other subsystems"
     ],
-    "answer": "If the subsystem needs to coordinate several internal objects"
+    "answer": "If the subsystem needs to coordinate the execution of other subsystems"
   },
   {
     "question": "When is a control subsystem required?",
@@ -307,7 +307,7 @@
       "A class that encapsulates data",
       "A task that encapsulates data"
     ],
-    "answer": "An active object that encapsulates data"
+    "answer": "A passive object that encapsulates data"
   },
   {
     "question": "What is a class interface?",
@@ -427,7 +427,7 @@
       "A client requests services, and a service fulfills client requests.",
       "A client requests services, and multiple services fulfill client requests."
     ],
-    "answer": "A client requests services, and a service fulfills client requests."
+    "answer": "Multiple clients request services, and a service fulfills client requests."
   },
   {
     "question": "In a Multi-tier Client/Service architectural pattern, which of the following is true about an intermediate tier?",
@@ -437,7 +437,7 @@
       "An intermediate tier is both a control tier and a service tier.",
       "An intermediate tier is both a client tier and a service tier."
     ],
-    "answer": "An intermediate tier is both a control tier and a service tier."
+    "answer": "An intermediate tier is both a client tier and a service tier."
   },
   {
     "question": "How is Multiple Client/Multiple Service architectural pattern different from a Multiple Client/Single Service architectural pattern?",
@@ -507,6 +507,6 @@
       "The aggregate and part classes are designed as relational tables.",
       "Only the superclass is designed as a relational table."
     ],
-    "answer": "Only subclasses are designed as relational tables."
+    "answer": "The aggregate and part classes are designed as relational tables."
   }
 ]
