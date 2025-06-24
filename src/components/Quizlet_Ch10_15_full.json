@@ -1,5 +1,106 @@
 [
   {
+    "question": "What is a state in a state machine?",
+    "options": [
+      "A recognizable situation that exists over an interval of time",
+      "A condition that is True or False",
+      "An input from the external environment",
+      "An output from the system"
+    ],
+    "answer": "A recognizable situation that exists over an interval of time"
+  },
+  {
+    "question": "What is an event in a state machine?",
+    "options": [
+      "A discrete signal that causes a change of state",
+      "An input from the external environment",
+      "An input that is True or False",
+      "The result of a state transition"
+    ],
+    "answer": "A discrete signal that causes a change of state"
+  },
+  {
+    "question": "What is an action in a state machine?",
+    "options": [
+      "An occurrence at a point in time",
+      "A cause of a state transition",
+      "An interval between two successive events",
+      "A computation that executes as a result of a state transition"
+    ],
+    "answer": "A computation that executes as a result of a state transition"
+  },
+  {
+    "question": "What is an entry action in a state machine?",
+    "options": [
+      "An action that is performed when the state is entered",
+      "An action that is performed when the state is left",
+      "An action that starts executing when the state is entered and completes executing when the state is left",
+      "An action that executes as a result of a state transition"
+    ],
+    "answer": "An action that is performed when the state is entered"
+  },
+  {
+    "question": "What is an exit action in a state machine?",
+    "options": [
+      "An action that is performed when the state is entered",
+      "An action that is performed when the state is left",
+      "An action that starts executing when the state is entered and completes executing when the state is left",
+      "An action that executes as a result of a state transition"
+    ],
+    "answer": "An action that is performed when the state is left"
+  },
+  {
+    "question": "What is a condition used for in a state machine?",
+    "options": [
+      "A conditional action",
+      "A conditional state",
+      "A conditional state transition",
+      "A conditional event"
+    ],
+    "answer": "A conditional state transition"
+  },
+  {
+    "question": "What is a state transition into a composite state equivalent to?",
+    "options": [
+      "A transition into only one of the substates",
+      "A transition into each of the substates",
+      "A transition into none of the substates",
+      "A transition into any one of the substates"
+    ],
+    "answer": "A transition into only one of the substates"
+  },
+  {
+    "question": "What is a state transition out of a composite state equivalent to?",
+    "options": [
+      "A transition out of only one of the substates",
+      "A transition out of each of the substates",
+      "A transition out of none of the substates",
+      "A transition out of any one of the substates"
+    ],
+    "answer": "A transition out of each of the substates"
+  },
+  {
+    "question": "How does a composite state relate to a substate?",
+    "options": [
+      "A composite state is decomposed into substates.",
+      "Composite states are composed into substates.",
+      "A composite state transitions to a substate.",
+      "A substate transitions to a composite state."
+    ],
+    "answer": "A composite state is decomposed into substates."
+  },
+  {
+    "question": "If two actions are shown on a given state transition, which of the following is true?",
+    "options": [
+      "The two actions are dependent on each other.",
+      "The two actions are independent of each other.",
+      "One action provides an input to the other action.",
+      "The second action executes when the first action completes execution."
+    ],
+    "answer": "The two actions are independent of each other."
+  },
+
+  {
     "question": "What does a state-dependent interaction involve?",
     "options": [
       "A control object",
